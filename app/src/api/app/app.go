@@ -21,7 +21,7 @@ const (
 
 // StartApp ...
 func StartApp() {
-	r = gin.Default()
+	r := gin.Default()
 	db := configDataBase()
 	items.Configure(r, db)
 	r.Run(port)
